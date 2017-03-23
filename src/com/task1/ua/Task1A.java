@@ -13,12 +13,17 @@ public class Task1A {
         String name;
         System.out.print("Enter your name and press  'Enter' : ");
         name = scan.next();
-        System.out.print("\nHello " + name);
+        System.out.println("Hello " + name);
     }
     public void printConsolArguments(String args) {
-        String[] text = args.split(" ");
-        for (String str : text) {
-            System.out.printf("Argument -> %s%n", str);
+        System.out.println("Please, enter the number of arguments in the string");
+        Scanner sc = new Scanner(System.in);
+        if (sc.hasNextLine()) {
+            String[] strings = sc.nextLine().split("\\s+");
+            for(int i=strings.length-1;i>=0;i--){
+                System.out.print(strings[i]+" ");
+            }
+            System.out.println();
         }
     }
     public void variousNumbers() {

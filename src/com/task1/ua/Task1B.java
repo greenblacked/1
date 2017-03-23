@@ -1,5 +1,6 @@
 package com.task1.ua;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -152,6 +153,8 @@ public class Task1B {
             System.out.print(arr[i]);
         }
     }
+
+
 }
 
 
